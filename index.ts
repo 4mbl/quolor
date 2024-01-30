@@ -1,6 +1,6 @@
-type SpecialElements = 'html';
+export type SpecialElements = 'html';
 
-type Binding = {
+export type Binding = {
   type: 'text' | 'background';
   css: string;
   query: string;
@@ -8,11 +8,11 @@ type Binding = {
   specialElements?: SpecialElements[];
 };
 
-const DEFAULT_ELEMENTS = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p'];
+export const DEFAULT_ELEMENTS = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p'];
 
-const DEFAULT_SPECIAL_ELEMENTS: SpecialElements[] = ['html'];
+export const DEFAULT_SPECIAL_ELEMENTS: SpecialElements[] = ['html'];
 
-const DEFAULT_COLOR_BINDINGS: Binding[] = [
+export const DEFAULT_COLOR_BINDINGS: Binding[] = [
   {
     type: 'text',
     css: '--query-color-text',
@@ -27,7 +27,7 @@ const DEFAULT_COLOR_BINDINGS: Binding[] = [
   },
 ];
 
-function quolor(
+export function quolor(
   document: Document,
   bindings: Binding[] = DEFAULT_COLOR_BINDINGS
 ) {

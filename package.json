@@ -1,0 +1,28 @@
+{
+  "name": "quolor",
+  "version": "0.1.0",
+  "description": "Query based color styling",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "preinstall": "npx -y only-allow pnpm",
+    "build": "tsc",
+    "publish": "npm publish"
+  },
+  "keywords": [
+    "quolor",
+    "color",
+    "search-parameters",
+    "query-parameters",
+    "query-string",
+    "styling"
+  ],
+  "author": "4mbl",
+  "license": "MIT",
+  "files": [
+    "dist/*"
+  ],
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}

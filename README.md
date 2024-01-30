@@ -13,7 +13,7 @@ quolor(document);
 ### Custom Rules
 
 ```ts
-import { quolor, Binding } from 'quolor';
+import { quolor, type Binding } from 'quolor';
 
 const rules: Binding[] = [
   {

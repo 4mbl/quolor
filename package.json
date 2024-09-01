@@ -5,7 +5,6 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "preinstall": "npx -y only-allow pnpm",
     "build": "tsc",
     "publish": "npm publish"
   },

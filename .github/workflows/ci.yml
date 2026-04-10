@@ -1,0 +1,14 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - '**'
+  workflow_dispatch:
+
+jobs:
+  ci:
+    name: Node.js
+    uses: 4mbl/actions/.github/workflows/ci-node-pnpm.yaml@a6649cca1ade072bfef684f8b10dcb4faf4a3b38 # v1
+    with:
+      disable-steps: "['build', 'format', 'lint', 'test']"
